@@ -2,6 +2,7 @@
 layout: layout.liquid
 title: 11ty Boilerplate
 ---
-
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<div x-data="{names: ['SpongeBob', 'Patrick', 'Sandy', 'Mr. Krabs', 'Plankton', 'Squidward', 'Pearl', 'Squilliam', 'Mrs. Puff', 'Karen'], headName: 'Press Button for Name', nameNum: 0}">
+    <h1 x-text="headName"></h1>
+    <button x-on:click="nameNum = generateNum() ,headName = names[nameNum]">Click Here for Name</button>
+</div>
