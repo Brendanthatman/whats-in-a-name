@@ -1,8 +1,8 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: What's in a Name?
 ---
 <div x-data="{names: ['SpongeBob', 'Patrick', 'Sandy', 'Mr. Krabs', 'Plankton', 'Squidward', 'Pearl', 'Squilliam', 'Mrs. Puff', 'Karen'], headName: 'Press Button for Name', nameNum: 0}">
     <h1 x-text="headName"></h1>
-    <button x-on:click="nameNum = generateNum() ,headName = names[nameNum]">Click Here for Name</button>
+    <button x-on:click="nameNum = generateNum(), headName = names[nameNum]">Click Here for Name</button>
 </div>
